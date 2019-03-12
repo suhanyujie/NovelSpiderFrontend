@@ -99,6 +99,35 @@ export default [
     ]
   },
   {
+    path: '/spider',
+    name: 'spider',
+    meta: {
+      icon: 'md-infinite',
+      title: '爬虫'
+    },
+    component: Main,
+    children: [
+      {
+        path: 'spider_main_list',
+        name: 'spider_main_list',
+        meta: {
+          icon: 'md-bug',
+          title: '爬虫主页'
+        },
+        component: () => import('@/view/spider/main/list.vue')
+      },
+      {
+        path: 'spider_chapter_list',
+        name: 'spider_chapter_list',
+        meta: {
+          icon: 'ios-list',
+          title: '爬虫'
+        },
+        component: () => import('@/view/join-page.vue')
+      }
+    ]
+  },
+  {
     path: '/components',
     name: 'components',
     meta: {
