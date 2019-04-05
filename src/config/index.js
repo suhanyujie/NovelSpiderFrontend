@@ -1,3 +1,5 @@
+import ENV_DATA from '@/config/env'
+
 export default {
   /**
    * @description 配置显示在浏览器标签的title
@@ -18,7 +20,7 @@ export default {
    */
   baseUrl: {
     // dev: 'https://www.easy-mock.com/mock/5add9213ce4d0e69998a6f51/iview-admin/',
-    dev: 'https://localhost:8001',
+    dev: ENV_DATA.BASE_URL,
     pro: 'https://localhost:8001'
   },
   /**

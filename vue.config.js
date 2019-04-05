@@ -40,11 +40,11 @@ module.exports = {
   // devServer: {
   //   proxy: 'localhost:3000'
   // }
-  css:{
-    loaderOptions:{
-      less:{
-        javascriptEnabled:true
+  css: {
+    loaderOptions: {
+      less: {
+        javascriptEnabled: true
       }
     }
-  }	
+  }
 }
