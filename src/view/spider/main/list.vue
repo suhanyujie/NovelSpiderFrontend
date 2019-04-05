@@ -8,7 +8,7 @@
 
 <script>
 import Tables from '_c/tables'
-import { getMainList } from '@/api/spider/main'
+import { getMainListPost } from '@/api/spider/main'
 export default {
   name: 'tables_page',
   components: {
@@ -58,8 +58,7 @@ export default {
     }
   },
   mounted () {
-    getMainList().then(res => {
-      console.log(res.data.data)
+    getMainListPost().then(res => {
       this.tableData = res.data.data
     })
   }

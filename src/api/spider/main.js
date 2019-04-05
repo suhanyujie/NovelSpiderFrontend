@@ -6,3 +6,12 @@ export const getMainList = () => {
     method: 'get'
   })
 }
+
+export const getMainListPost = () => {
+  return axios.request({
+    url: '/Spider/MainList/list',
+    method: 'post',
+    data: {
+    }
+  })
+}
