@@ -4,6 +4,7 @@
 ## usage
 
 ### install
+* 配置文件 `cp src/config/env.example.js src/config/env.js`
 * `git clone https://github.com/suhanyujie/NovelSpiderFrontend.git`
 * `npm install`
 * `npm run build`
