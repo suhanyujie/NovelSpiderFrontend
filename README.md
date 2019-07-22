@@ -6,11 +6,13 @@
 ### install
 * 配置文件 `cp src/config/env.example.js src/config/env.js`
 * `git clone https://github.com/suhanyujie/NovelSpiderFrontend.git`
-* `npm install`
+* `npm install`，如果安装时报错：
+  * 试试 `npm cache clean --force`，再 运行 `npm install`
+  * 或者试试 `npm install --no-bin-links`
 * `npm run build`
 
 ### dev
-* `npm run dev`
+* 开发时，使用 `npm run dev`，然后编辑源代码调试
 
 ## 后端
 * https://github.com/suhanyujie/NovelSpider
