@@ -3,7 +3,6 @@ const path = require('path')
 const resolve = dir => {
   return path.join(__dirname, dir)
 }
-
 // 项目部署基础
 // 默认情况下，我们假设你的应用将被部署在域的根目录下,
 // 例如：https://www.my-app.com/
@@ -14,7 +13,7 @@ const resolve = dir => {
 // iview-admin线上演示打包路径： https://file.iviewui.com/admin-dist/
 const BASE_URL = process.env.NODE_ENV === 'production'
   ? '/'
-  : '/'
+  : 'https://localhost:8001'
 
 module.exports = {
   // Project deployment base
@@ -24,7 +23,8 @@ module.exports = {
   // sub-path here. For example, if your app is deployed at
   // https://www.foobar.com/my-app/
   // then change this to '/my-app/'
-  baseUrl: BASE_URL,
+  // baseUrl: '', // BASE_URL
+
   // tweak internal webpack configuration.
   // see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
   // 如果你不需要使用eslint，把lintOnSave设为false即可

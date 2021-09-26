@@ -21,7 +21,9 @@ export default {
   baseUrl: {
     // dev: 'https://www.easy-mock.com/mock/5add9213ce4d0e69998a6f51/iview-admin/',
     dev: ENV_DATA.BASE_URL,
-    pro: 'https://localhost:8001'
+    // dev: 'https://localhost:8081',
+    development: 'https://localhost:8081', // 待配置
+    pro: 'https://localhost:8001' // 待配置
   },
   /**
    * @description 默认打开的首页的路由name值，默认为home

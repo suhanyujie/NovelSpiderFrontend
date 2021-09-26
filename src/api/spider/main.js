@@ -7,11 +7,10 @@ export const getMainList = () => {
   })
 }
 
-export const getMainListPost = () => {
+export const getMainListPost = (data) => {
   return axios.request({
     url: '/Spider/MainList/list',
     method: 'post',
-    data: {
-    }
+    data: data
   })
 }
